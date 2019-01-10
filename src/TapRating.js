@@ -85,9 +85,7 @@ export default class TapRating extends Component {
 const styles = StyleSheet.create({
   ratingContainer: {
     backgroundColor: 'transparent',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection: 'column'
   },
   reviewText: {
     fontSize: 25,
