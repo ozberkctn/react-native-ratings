@@ -57,6 +57,7 @@ export default class TapRating extends Component {
 
     _.times(count, index => {
       rating_array.push(
+        <View style={{ marginLeft: index != 0 ? 15 : 0 }}>
         <Star
           key={index}
           position={index + 1}
@@ -64,6 +65,7 @@ export default class TapRating extends Component {
           fill={position >= index + 1}
           {...this.props}
         />
+        </View>
       )
     })
 
@@ -94,8 +96,6 @@ const styles = StyleSheet.create({
     color: 'rgba(230, 196, 46, 1)'
   },
   starContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection: 'row'
   }
 });
